@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141775EE1C630E1E0029868C /* GLKeenVertexAttribBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 141775ED1C630E1E0029868C /* GLKeenVertexAttribBuffer.m */; };
 		D3EC02B61C5FA0F40007752C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC02B51C5FA0F40007752C /* main.m */; };
 		D3EC02B91C5FA0F40007752C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC02B81C5FA0F40007752C /* AppDelegate.m */; };
 		D3EC02BF1C5FA0F40007752C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EC02BD1C5FA0F40007752C /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141775ED1C630E1E0029868C /* GLKeenVertexAttribBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKeenVertexAttribBuffer.m; sourceTree = "<group>"; };
+		141775EF1C630EC00029868C /* GLKeenVertexAttribBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKeenVertexAttribBuffer.h; sourceTree = "<group>"; };
 		D3EC02B11C5FA0F40007752C /* GLK-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GLK-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EC02B51C5FA0F40007752C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3EC02B71C5FA0F40007752C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				D3EC02CC1C5FA84A0007752C /* GLKeenViewController.m */,
 				D3EC02CE1C5FAAD00007752C /* GLKeenContext.h */,
 				D3EC02CF1C5FAAD00007752C /* GLKeenContext.m */,
+				141775EF1C630EC00029868C /* GLKeenVertexAttribBuffer.h */,
+				141775ED1C630E1E0029868C /* GLKeenVertexAttribBuffer.m */,
 			);
 			path = "GLK-2";
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				TargetAttributes = {
 					D3EC02B01C5FA0F40007752C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E6HMU725M5;
 					};
 				};
 			};
@@ -158,6 +164,7 @@
 				D3EC02D01C5FAAD00007752C /* GLKeenContext.m in Sources */,
 				D3EC02B91C5FA0F40007752C /* AppDelegate.m in Sources */,
 				D3EC02B61C5FA0F40007752C /* main.m in Sources */,
+				141775EE1C630E1E0029868C /* GLKeenVertexAttribBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GLK-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "volvet.GLK-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -280,10 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GLK-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "volvet.GLK-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -306,6 +319,7 @@
 				D3EC02CA1C5FA0F40007752C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
